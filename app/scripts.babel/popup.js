@@ -5,12 +5,24 @@
 var searchBtn = document.getElementById('btn-search');
 var searchInput = document.getElementById('input-search');
 searchBtn.addEventListener('click', function () {
+  searchAll();
+});
+
+searchInput.addEventListener('keypress', function (e) {
+  var key = e.which || e.keyCode;
+  if (key === 13) { // 13 is enter
+    // code for enter
+    searchAll();
+  }
+});
+
+function searchAll() {
   var keywords = encodeURIComponent(searchInput.value);
   google(keywords);
   bing(keywords);
   baidu(keywords);
   yandex(keywords);
-});
+}
 
 function baidu(keywords) {
   console.log('baidu');
