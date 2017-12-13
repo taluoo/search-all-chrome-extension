@@ -1,3 +1,29 @@
 body {
   padding: 20px;
 }
+
+.popup {
+  background: #fafafa;
+
+}
+
+.popup .search-group {
+  width: 600px;
+  padding-bottom: 30px;
+}
+
+.popup input {
+  float: left;
+  width: 400px;
+  height: 30px;
+  padding-left: 10px;
+  border: 1px solid #999;
+  box-shadow: 3px 3px 3px #ddd;
+  border-radius: 2px;
+  font-size: 18px;
+}
+
+.popup input:focus {
+  outline: none;
+}
+

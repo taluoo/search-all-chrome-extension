@@ -2,11 +2,7 @@
 
 // console.log('\'Allo \'Allo! Popup');
 
-var searchBtn = document.getElementById('btn-search');
 var searchInput = document.getElementById('input-search');
-searchBtn.addEventListener('click', function () {
-  searchAll();
-});
 
 searchInput.addEventListener('keypress', function (e) {
   var key = e.which || e.keyCode;
