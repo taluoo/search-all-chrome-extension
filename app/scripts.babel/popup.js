@@ -18,6 +18,7 @@ function searchAll() {
   bing(keywords);
   baidu(keywords);
   yandex(keywords);
+  github(keywords);
 }
 
 function baidu(keywords) {
@@ -38,5 +39,10 @@ function bing(keywords) {
 
 function yandex(keywords) {
   var url = `https://www.yandex.com/search/?text=${keywords}`;
+  window.open(url);
+}
+
+function github(keywords) {
+  var url = `https://github.com/search?utf8=%E2%9C%93&q=${keywords}&type=`;
   window.open(url);
 }
